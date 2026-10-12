@@ -1,7 +1,7 @@
 'use strict';
 // Destinos editables: dejar null hasta disponer de la URL real.
 const DESTINATIONS = Object.freeze({
-  arlin: null,
+  arlin: 'https://valenciaelemental.begonaarlin.art/#tiempo-01',
   asunaah: 'asunaah-portfolio.html',
   erik: 'https://erikgaren.com/',
   alerik: null
