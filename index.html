@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050713">
+  <title>GAREN VERSE · Four Minds. One Universe.</title>
+  <link rel="stylesheet" href="style.css?v=160">
+</head>
+<body>
+  <header>
+    <a href="#home" class="logo" aria-label="GAREN VERSE, volver al inicio">GAREN <small>VERSE</small></a>
+    <nav aria-label="Navegación principal"><a href="#explore">EXPLORE</a><a href="#about">ABOUT</a></nav>
+    <span>FOUR MINDS<br>ONE UNIVERSE</span>
+  </header>
+  <main>
+    <section id="home" class="hero" aria-label="Selecciona tu universo">
+      <div class="stage" aria-hidden="true"></div>
+      <div class="planet" aria-hidden="true"><div class="sphere"></div><div class="ring"></div><div class="ring ring2"></div><h1>GAREN <em>VERSE</em></h1></div>
+      <div class="focus" aria-hidden="true"></div>
+      <div class="labels" aria-hidden="true"><span>ARLIN</span><span>ASUNAAH</span><span>ERIK</span><span>ALERIK</span></div>
+      <div class="hotspots" aria-label="Seleccionar universo"><button data-world="arlin" aria-label="Entrar en ARLIN"></button><button data-world="asunaah" aria-label="Entrar en ASUNAAH"></button><button data-world="erik" aria-label="Entrar en el universo de ERIK"></button><button data-world="alerik" aria-label="Entrar en ALERIK"></button></div>
+      <a class="scroll" href="#explore">SCROLL TO DISCOVER ↓</a>
+    </section>
+    <section id="explore"><div class="intro"><p>THE GAREN CONSTELLATION</p><h2>Four worlds. <em>Infinite possibilities.</em></h2><p>Selecciona un personaje para entrar en su universo.</p></div><div class="orbit-shell" id="orbit-shell" aria-label="Selector orbital de universos">
+  <div class="orbit-halo" aria-hidden="true"></div>
+  <div class="cards orbit-cards" id="cards" aria-label="Personajes; usa las flechas para cambiar de selección"></div>
+  <div class="orbit-controls" aria-label="Controles de la constelación">
+    <button type="button" id="orbit-prev" class="orbit-arrow" aria-label="Personaje anterior">←</button>
+    <span id="orbit-status" class="orbit-status" aria-live="polite"></span>
+    <button type="button" id="orbit-next" class="orbit-arrow" aria-label="Personaje siguiente">→</button>
+  </div>
+  <p class="orbit-hint">DESLIZA PARA GIRAR · PULSA EL PERSONAJE CENTRAL PARA ENTRAR</p>
+  <button type="button" id="orbit-layout" class="orbit-layout" aria-pressed="false">VER LAS CUATRO TARJETAS</button>
+</div></section>
+    <section id="about"><p>OUR UNIVERSE</p><h2 class="about-heartbeat"><span class="heartbeat-primary">Different skills.</span><br><em class="heartbeat-secondary">Same gravity.</em></h2><p>Cuatro identidades creativas y tecnológicas. Un punto de encuentro para la familia García Arenas.</p><a href="#explore">EXPLORE THE UNIVERSE ↗</a></section>
+  </main>
+  <footer><span>© GAREN VERSE</span><a href="#home">BACK TO TOP ↑</a></footer>
+  <section id="world" hidden aria-label="Universo del personaje" aria-modal="true" role="dialog">
+    <button id="back" type="button">← BACK TO GAREN VERSE</button>
+    <div class="world-layout"><div class="world-copy">
+      <p class="world-kicker">WELCOME TO THE UNIVERSE OF</p>
+      <h2 id="world-name"></h2><p id="world-tag"></p><p id="world-desc"></p>
+      <div id="world-portal-slot" aria-live="polite"></div>
+    </div><img id="world-img" alt=""></div>
+  </section>
+  <div id="flash" aria-hidden="true"></div>
+  <script src="app.js?v=160" defer></script>
+</body>
+</html>
