@@ -18,7 +18,22 @@
       ctx = new AudioContextClass(); master = ctx.createGain();
       master.gain.value = 0.19; master.connect(ctx.destination);
     }
-    if (ctx.state === 'suspended') ctx.resume().catch(() => {});
+    
+if (ctx.state === 'suspended') {
+  ctx.resume()
+    .then(() => {
+      if (enabled) {
+        effects.select();
+        syncSections();
+      }
+    })
+    .catch(error => {
+      console.error('GAREN Audio:', error);
+    });
+} else if (ctx.state === 'running' && enabled) {
+  effects.select();
+  syncSections();
+}
   }
   function tone(freq, at, length, volume = .08, type = 'sine', endFreq = null) {
     if (!enabled || !ctx || ctx.state !== 'running') return;
