@@ -1,0 +1,5 @@
+/* GAREN VERSE 1.7: single, accessible sound control. */
+#garen-sound-toggle{position:fixed;right:18px;bottom:78px;z-index:45;padding:11px 14px;min-height:44px;border:1px solid #a9ddff77;border-radius:30px;background:#071326e8;color:#e2f4ff;font:700 11px 'DM Sans',sans-serif;letter-spacing:1.6px;box-shadow:0 3px 20px #0007;cursor:pointer}
+#garen-sound-toggle[aria-pressed="true"]{border-color:#a9ddff;box-shadow:0 0 15px #57b8ff55}
+#garen-sound-toggle:focus-visible{outline:3px solid #a9ddff;outline-offset:3px}
+@media(max-width:600px){#garen-sound-toggle{right:10px;bottom:65px;padding:9px 11px}}
