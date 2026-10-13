@@ -103,3 +103,33 @@ header{position:absolute;z-index:10;inset:0 0 auto;display:flex;align-items:cent
 @media(max-width:600px){#explore{min-height:100svh;padding:40px 3% 25px}#explore .intro h2{font-size:clamp(25px,7vw,36px)}#explore .orbit-cards{height:clamp(350px,55svh,520px)}#explore .orbit-cards .card{width:clamp(190px,62vw,275px)}.orbit-hint{font-size:8px}#explore .orbit-shell.is-grid .orbit-cards{gap:8px}#explore .orbit-shell.is-grid .orbit-cards .card{height:310px}}
 @media(max-height:650px) and (min-width:801px){#explore .orbit-cards{height:clamp(290px,55svh,410px)}#explore .intro h2{font-size:30px}#explore .intro>p:last-child{margin-bottom:4px}.orbit-hint{margin:4px 0}}
 @media(prefers-reduced-motion:reduce){#explore .orbit-cards .card{transition:none!important}.orbit-halo{transition:none!important}}
+
+/* GAREN VERSE — Restauración del footer */
+footer {
+  min-height: 70px;
+  padding: 20px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+footer span,
+footer a {
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+footer a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+footer a:hover {
+  color: #a9ddff;
+}
